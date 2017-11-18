@@ -44,8 +44,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bedroom_Background" translatesAutoresizingMaskIntoConstraints="NO" id="dr7-4I-paY">
+                                <rect key="frame" x="0.0" y="0.0" width="1112" height="685"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4R-f8-tBx">
-                                <rect key="frame" x="1029" y="358" width="63" height="118"/>
+                                <rect key="frame" x="1029" y="283" width="63" height="118"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <state key="normal" title="&gt;"/>
@@ -70,8 +74,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bathroom_Background" translatesAutoresizingMaskIntoConstraints="NO" id="PgD-5l-3aw">
+                                <rect key="frame" x="0.0" y="0.0" width="1113" height="686"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b85-fj-kem">
-                                <rect key="frame" x="20" y="358" width="63" height="118"/>
+                                <rect key="frame" x="20" y="289" width="63" height="109"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <state key="normal" title="&lt;"/>
@@ -86,9 +94,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V4a-EI-BRs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1545" y="-522"/>
+            <point key="canvasLocation" x="1544.7841726618706" y="-522.30215827338134"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Bathroom_Background" width="1920" height="1080"/>
+        <image name="Bedroom_Background" width="1920" height="1080"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="7Do-5f-wkC"/>
     </inferredMetricsTieBreakers>
