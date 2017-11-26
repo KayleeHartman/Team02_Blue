@@ -67,7 +67,7 @@
                                 <rect key="frame" x="65" y="391" width="538" height="349"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="dirty_bed" image="Bedroom_UnmadeBed" translatesAutoresizingMaskIntoConstraints="NO" id="5SR-1D-BPQ" userLabel="dirty_bed">
+                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="bedroom_dirty_bed" image="Bedroom_UnmadeBed" translatesAutoresizingMaskIntoConstraints="NO" id="5SR-1D-BPQ" userLabel="dirty_bed">
                                 <rect key="frame" x="65" y="391" width="538" height="349"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -171,7 +171,7 @@
                                     <action selector="prevSegueArrowOrg:" destination="pM9-oq-3HC" eventType="touchUpInside" id="Qpp-fH-TP6"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="restroom_dirty_towel" image="DirtyTowelRed" translatesAutoresizingMaskIntoConstraints="NO" id="HHq-jl-12U">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="restroom_dirty_towel" image="DirtyTowel" translatesAutoresizingMaskIntoConstraints="NO" id="HHq-jl-12U">
                                 <rect key="frame" x="321" y="696" width="197" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -250,7 +250,6 @@
         <image name="Bedroom_UnmadeBed" width="927" height="462"/>
         <image name="Bedroom_WindowSmudges" width="596" height="562"/>
         <image name="DirtyTowel" width="247" height="196"/>
-        <image name="DirtyTowelRed" width="247" height="196"/>
         <image name="FullTrash" width="88" height="101"/>
         <image name="back" width="512" height="512"/>
         <image name="forward" width="512" height="512"/>
