@@ -84,6 +84,14 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bedroom_Background" translatesAutoresizingMaskIntoConstraints="NO" id="qy7-yl-OKJ">
                                 <rect key="frame" x="0.0" y="20" width="1112" height="814"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cleanRug" translatesAutoresizingMaskIntoConstraints="NO" id="icu-dD-GkC">
+                                <rect key="frame" x="58" y="601" width="673" height="219"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="dirty_rug" image="dirtyRug" translatesAutoresizingMaskIntoConstraints="NO" id="4s7-0s-4Bv">
+                                <rect key="frame" x="58" y="601" width="673" height="219"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bed_clean" translatesAutoresizingMaskIntoConstraints="NO" id="ici-ac-vmq">
                                 <rect key="frame" x="65" y="391" width="538" height="349"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -130,10 +138,12 @@
                         <outlet property="cleanBed" destination="5SR-1D-BPQ" id="Pmj-E0-Bnh"/>
                         <outlet property="cleanLamp" destination="WZh-pQ-BQH" id="OqK-rm-apc"/>
                         <outlet property="cleanPillows" destination="msJ-bl-F3v" id="CeE-0v-l1Y"/>
+                        <outlet property="cleanRug" destination="icu-dD-GkC" id="alO-46-Qvo"/>
                         <outlet property="dirtyBed" destination="5SR-1D-BPQ" id="wJI-cY-eXM"/>
                         <outlet property="dirtyLamp" destination="VVo-tb-SPg" id="YN0-aw-pNM"/>
                         <outlet property="dirtyNightstand" destination="fDK-d7-woW" id="S5H-Ss-4WU"/>
                         <outlet property="dirtyPillow" destination="GjL-6A-n2Z" id="O5w-AR-ofN"/>
+                        <outlet property="dirtyRug" destination="4s7-0s-4Bv" id="eas-4p-cBO"/>
                         <outlet property="dirtyTrashCan" destination="JqZ-au-niK" id="ixN-PM-HRc"/>
                     </connections>
                 </viewController>
@@ -175,6 +185,8 @@
         <image name="bed_pillows_clean" width="435" height="135"/>
         <image name="bed_pillows_dirty" width="184" height="143"/>
         <image name="bed_unmade" width="927" height="462"/>
+        <image name="cleanRug" width="1170" height="287"/>
+        <image name="dirtyRug" width="1170" height="287"/>
         <image name="lamp_clean" width="182" height="132"/>
         <image name="lamp_dirty" width="182" height="132"/>
         <image name="nightstand_dirty" width="117" height="108"/>

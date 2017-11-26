@@ -19,6 +19,8 @@ class Bedroom2: UIViewController {
     @IBOutlet weak var cleanLamp: UIImageView!
     @IBOutlet weak var dirtyLamp: UIImageView!
     @IBOutlet weak var dirtyNightstand: UIImageView!
+    @IBOutlet weak var dirtyRug: UIImageView!
+    @IBOutlet weak var cleanRug: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +49,11 @@ class Bedroom2: UIViewController {
         let dirtyNightstandGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
         dirtyNightstand.isUserInteractionEnabled = true
         dirtyNightstand.addGestureRecognizer(dirtyNightstandGestureRecognizer)
+        
+        //Add Dirty Rug Tap
+        let dirtyRugGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
+        dirtyRug.isUserInteractionEnabled = true
+        dirtyRug.addGestureRecognizer(dirtyRugGestureRecognizer)
         
     }
 
