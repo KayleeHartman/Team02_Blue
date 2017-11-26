@@ -88,15 +88,15 @@
                                 <rect key="frame" x="58" y="601" width="673" height="219"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="dirty_rug" image="dirtyRug" translatesAutoresizingMaskIntoConstraints="NO" id="4s7-0s-4Bv">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="bedroom_dirty_rug" image="dirtyRug" translatesAutoresizingMaskIntoConstraints="NO" id="4s7-0s-4Bv">
                                 <rect key="frame" x="58" y="601" width="673" height="219"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="dirty_window" image="dirtyWindow" translatesAutoresizingMaskIntoConstraints="NO" id="1XI-Y9-CrT">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="bedroom_dirty_window" image="dirtyWindow" translatesAutoresizingMaskIntoConstraints="NO" id="1XI-Y9-CrT">
                                 <rect key="frame" x="546" y="141" width="355" height="433"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="dirty_stool" image="dirtyStool" translatesAutoresizingMaskIntoConstraints="NO" id="fdQ-IJ-H2m">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="bedroom_dirty_stool" image="dirtyStool" translatesAutoresizingMaskIntoConstraints="NO" id="fdQ-IJ-H2m">
                                 <rect key="frame" x="638" y="548" width="120" height="83"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -104,7 +104,7 @@
                                 <rect key="frame" x="65" y="391" width="538" height="349"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="dirty_bed" image="bed_unmade" translatesAutoresizingMaskIntoConstraints="NO" id="5SR-1D-BPQ" userLabel="dirty_bed">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="bedroom_dirty_bed" image="bed_unmade" translatesAutoresizingMaskIntoConstraints="NO" id="5SR-1D-BPQ" userLabel="dirty_bed">
                                 <rect key="frame" x="65" y="391" width="538" height="349"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -112,11 +112,11 @@
                                 <rect key="frame" x="93" y="412" width="218" height="116"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="bed_pillows_dirty" image="bed_pillows_dirty" translatesAutoresizingMaskIntoConstraints="NO" id="GjL-6A-n2Z">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="bedroom_dirty_pillows" image="bed_pillows_dirty" translatesAutoresizingMaskIntoConstraints="NO" id="GjL-6A-n2Z">
                                 <rect key="frame" x="48" y="723" width="133" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="dirty_trash_can" image="trash_can_dirty" translatesAutoresizingMaskIntoConstraints="NO" id="JqZ-au-niK" userLabel="Trash Can Dirty">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="bedroom_dirty_trash" image="trash_can_dirty" translatesAutoresizingMaskIntoConstraints="NO" id="JqZ-au-niK" userLabel="Trash Can Dirty">
                                 <rect key="frame" x="486" y="459" width="52" height="77"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -124,19 +124,19 @@
                                 <rect key="frame" x="331" y="393" width="94" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="dirty_lamp" image="lamp_dirty" translatesAutoresizingMaskIntoConstraints="NO" id="VVo-tb-SPg">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="bedroom_dirty_lamp" image="lamp_dirty" translatesAutoresizingMaskIntoConstraints="NO" id="VVo-tb-SPg">
                                 <rect key="frame" x="331" y="393" width="94" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="dirty_nightstand" image="nightstand_dirty" translatesAutoresizingMaskIntoConstraints="NO" id="fDK-d7-woW">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="bedroom_dirty_nightstand" image="nightstand_dirty" translatesAutoresizingMaskIntoConstraints="NO" id="fDK-d7-woW">
                                 <rect key="frame" x="0.0" y="548" width="68" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="Dirty Drink" image="dirtyDrink" translatesAutoresizingMaskIntoConstraints="NO" id="Il0-dh-d1I">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="bedroom_dirty_drink" image="dirtyDrink" translatesAutoresizingMaskIntoConstraints="NO" id="Il0-dh-d1I">
                                 <rect key="frame" x="697" y="675" width="325" height="157"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="dirty_towel" image="dirtyTowelRed" translatesAutoresizingMaskIntoConstraints="NO" id="vz2-cZ-2eE">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="bedroom_dirty_towel" image="dirtyTowelRed" translatesAutoresizingMaskIntoConstraints="NO" id="vz2-cZ-2eE">
                                 <rect key="frame" x="515" y="692" width="154" height="122"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -149,7 +149,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="nextSegueArrowOrg"/>
                                 <connections>
-                                    <segue destination="pM9-oq-3HC" kind="show" animates="NO" id="ACX-gy-F5h"/>
+                                    <segue destination="pM9-oq-3HC" kind="show" identifier="restroomSegue" animates="NO" id="ACX-gy-F5h"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -196,6 +196,10 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bathroom_Background" translatesAutoresizingMaskIntoConstraints="NO" id="T9A-i7-Bq2">
                                 <rect key="frame" x="0.0" y="20" width="1112" height="814"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="restroom_dirty_floor" image="dirtyFloor" translatesAutoresizingMaskIntoConstraints="NO" id="SXH-W2-iKr">
+                                <rect key="frame" x="106" y="401" width="919" height="433"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVm-zV-AEb">
                                 <rect key="frame" x="20" y="338" width="71" height="158"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -206,6 +210,30 @@
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="restroom_dirty_towel" image="dirtyTowelRed" translatesAutoresizingMaskIntoConstraints="NO" id="HHq-jl-12U">
                                 <rect key="frame" x="321" y="696" width="197" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="restroom_dirty_trash" image="trash_can_dirty" translatesAutoresizingMaskIntoConstraints="NO" id="c9N-DR-kTn">
+                                <rect key="frame" x="596" y="428" width="43" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="restroom_dirty_mirror" image="dirtyMirror" translatesAutoresizingMaskIntoConstraints="NO" id="ws2-3I-386">
+                                <rect key="frame" x="862" y="113" width="250" height="295"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="restroom_dirty_rag" image="dirtyRag" translatesAutoresizingMaskIntoConstraints="NO" id="JoP-9S-AFi">
+                                <rect key="frame" x="832" y="394" width="80" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="restroom_dirty_shower" image="dirtyShower" translatesAutoresizingMaskIntoConstraints="NO" id="F9E-Ae-xdy">
+                                <rect key="frame" x="312" y="154" width="240" height="315"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="restroomCleanRug" translatesAutoresizingMaskIntoConstraints="NO" id="JdG-hp-VWv">
+                                <rect key="frame" x="540" y="477" width="254" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="restroom_dirty_rug" image="restroomDirtyRug" translatesAutoresizingMaskIntoConstraints="NO" id="S1G-iq-xvI">
+                                <rect key="frame" x="540" y="477" width="254" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -219,14 +247,21 @@
                         <viewLayoutGuide key="safeArea" id="AUH-D3-tr7"/>
                     </view>
                     <connections>
+                        <outlet property="restroomCleanRug" destination="JdG-hp-VWv" id="yE7-ql-uCZ"/>
+                        <outlet property="restroomDirtyFloor" destination="SXH-W2-iKr" id="tbn-pK-V38"/>
+                        <outlet property="restroomDirtyMirror" destination="ws2-3I-386" id="fc9-CZ-mSg"/>
+                        <outlet property="restroomDirtyRag" destination="JoP-9S-AFi" id="ddj-pv-msp"/>
+                        <outlet property="restroomDirtyRug" destination="S1G-iq-xvI" id="vGI-zN-bw4"/>
+                        <outlet property="restroomDirtyShower" destination="F9E-Ae-xdy" id="BJW-s3-dPX"/>
                         <outlet property="restroomDirtyTowel" destination="HHq-jl-12U" id="hH8-Gg-LGm"/>
+                        <outlet property="restroomDirtyTrash" destination="c9N-DR-kTn" id="d5P-nY-OjO"/>
                         <segue destination="OqZ-qx-wBx" kind="unwind" identifier="unwindToBedroom" animates="NO" unwindAction="unwindToBedroomWithSegue:" id="GnV-CZ-J3i"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hqG-w4-pkj" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="OqZ-qx-wBx" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1515.6474820143885" y="957.55395683453241"/>
+            <point key="canvasLocation" x="2037.9496402877699" y="956.83453237410083"/>
         </scene>
         <!--Bathroom-->
         <scene sceneID="6Ss-SH-bPU">
@@ -266,7 +301,11 @@
         <image name="cleanRug" width="1170" height="287"/>
         <image name="cleanStool" width="201" height="167"/>
         <image name="dirtyDrink" width="586" height="283"/>
+        <image name="dirtyFloor" width="1589" height="530"/>
+        <image name="dirtyMirror" width="430" height="330"/>
+        <image name="dirtyRag" width="80" height="66"/>
         <image name="dirtyRug" width="1170" height="287"/>
+        <image name="dirtyShower" width="399" height="422"/>
         <image name="dirtyStool" width="255" height="167"/>
         <image name="dirtyTowelRed" width="247" height="196"/>
         <image name="dirtyWindow" width="596" height="562"/>
@@ -275,6 +314,8 @@
         <image name="nextSegueArrowOrg" width="71" height="158"/>
         <image name="nightstand_dirty" width="117" height="108"/>
         <image name="prevSegueArrowOrg" width="71" height="158"/>
+        <image name="restroomCleanRug" width="440" height="210"/>
+        <image name="restroomDirtyRug" width="440" height="210"/>
         <image name="trash_can_dirty" width="88" height="101"/>
     </resources>
     <inferredMetricsTieBreakers>
