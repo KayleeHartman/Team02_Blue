@@ -21,6 +21,7 @@ class Bedroom2: UIViewController {
     @IBOutlet weak var dirtyNightstand: UIImageView!
     @IBOutlet weak var dirtyRug: UIImageView!
     @IBOutlet weak var cleanRug: UIImageView!
+    @IBOutlet weak var dirtyTowel: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,6 +55,11 @@ class Bedroom2: UIViewController {
         let dirtyRugGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
         dirtyRug.isUserInteractionEnabled = true
         dirtyRug.addGestureRecognizer(dirtyRugGestureRecognizer)
+        
+        //Add Dirty Towel Tap
+        let dirtyTowelGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
+        dirtyTowel.isUserInteractionEnabled = true
+        dirtyTowel.addGestureRecognizer(dirtyTowelGestureRecognizer)
         
     }
 
@@ -89,8 +95,11 @@ class Bedroom2: UIViewController {
         }
         
         //Check if image was actually selected
+        print("Click")
+        
         if colorComponents.alpha != 0 {
-            print("Image was selected: \(restorationIdentifier)")
+            
+            print("Image was selected: \(restorationIdentifier) -> \(colorComponents.alpha)")
         } else {
             //Transparent part of image view was selected
         }
