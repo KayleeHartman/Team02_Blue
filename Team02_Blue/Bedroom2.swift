@@ -22,6 +22,7 @@ class Bedroom2: UIViewController {
     @IBOutlet weak var dirtyRug: UIImageView!
     @IBOutlet weak var cleanRug: UIImageView!
     @IBOutlet weak var dirtyTowel: UIImageView!
+    @IBOutlet weak var dirtyDrink: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,6 +62,11 @@ class Bedroom2: UIViewController {
         dirtyTowel.isUserInteractionEnabled = true
         dirtyTowel.addGestureRecognizer(dirtyTowelGestureRecognizer)
         
+        //Add Dirty Drink Tap
+        let dirtyDrinkGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
+        dirtyDrink  .isUserInteractionEnabled = true
+        dirtyDrink.addGestureRecognizer(dirtyDrinkGestureRecognizer)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -95,8 +101,6 @@ class Bedroom2: UIViewController {
         }
         
         //Check if image was actually selected
-        print("Click")
-        
         if colorComponents.alpha != 0 {
             
             print("Image was selected: \(restorationIdentifier) -> \(colorComponents.alpha)")

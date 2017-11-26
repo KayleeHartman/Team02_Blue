@@ -128,6 +128,10 @@
                                 <rect key="frame" x="515" y="692" width="154" height="122"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="Dirty Drink" image="dirtyDrink" translatesAutoresizingMaskIntoConstraints="NO" id="Il0-dh-d1I">
+                                <rect key="frame" x="697" y="675" width="325" height="157"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -144,6 +148,7 @@
                         <outlet property="cleanPillows" destination="msJ-bl-F3v" id="CeE-0v-l1Y"/>
                         <outlet property="cleanRug" destination="icu-dD-GkC" id="alO-46-Qvo"/>
                         <outlet property="dirtyBed" destination="5SR-1D-BPQ" id="wJI-cY-eXM"/>
+                        <outlet property="dirtyDrink" destination="Il0-dh-d1I" id="AYH-9g-2u8"/>
                         <outlet property="dirtyLamp" destination="VVo-tb-SPg" id="YN0-aw-pNM"/>
                         <outlet property="dirtyNightstand" destination="fDK-d7-woW" id="S5H-Ss-4WU"/>
                         <outlet property="dirtyPillow" destination="GjL-6A-n2Z" id="O5w-AR-ofN"/>
@@ -191,6 +196,7 @@
         <image name="bed_pillows_dirty" width="184" height="143"/>
         <image name="bed_unmade" width="927" height="462"/>
         <image name="cleanRug" width="1170" height="287"/>
+        <image name="dirtyDrink" width="586" height="283"/>
         <image name="dirtyRug" width="1170" height="287"/>
         <image name="dirtyTowelRed" width="247" height="196"/>
         <image name="lamp_clean" width="182" height="132"/>
