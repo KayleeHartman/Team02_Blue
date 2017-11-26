@@ -23,6 +23,9 @@ class Bedroom2: UIViewController {
     @IBOutlet weak var cleanRug: UIImageView!
     @IBOutlet weak var dirtyTowel: UIImageView!
     @IBOutlet weak var dirtyDrink: UIImageView!
+    @IBOutlet weak var dirtyWindow: UIImageView!
+    @IBOutlet weak var dirtyStool: UIImageView!
+    @IBOutlet weak var cleanStool: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,8 +67,18 @@ class Bedroom2: UIViewController {
         
         //Add Dirty Drink Tap
         let dirtyDrinkGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
-        dirtyDrink  .isUserInteractionEnabled = true
+        dirtyDrink.isUserInteractionEnabled = true
         dirtyDrink.addGestureRecognizer(dirtyDrinkGestureRecognizer)
+     
+        //Add Dirty Window Tap
+        let dirtyWindowGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
+        dirtyWindow.isUserInteractionEnabled = true
+        dirtyWindow.addGestureRecognizer(dirtyWindowGestureRecognizer)
+        
+        //Add Dirty Stool Tap
+        let dirtyStoolGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
+        dirtyStool.isUserInteractionEnabled = true
+        dirtyStool.addGestureRecognizer(dirtyStoolGestureRecognizer)
         
     }
 
@@ -103,7 +116,49 @@ class Bedroom2: UIViewController {
         //Check if image was actually selected
         if colorComponents.alpha != 0 {
             
-            print("Image was selected: \(restorationIdentifier) -> \(colorComponents.alpha)")
+            //print("Image was selected: \(restorationIdentifier) -> \(colorComponents.alpha)")
+            
+            switch restorationIdentifier {
+                case "dirty_nightstand":
+                    print("Nightstand's open drawer was clicked")
+                    self.dirtyNightstand.alpha = 0.0
+                case "bed_pillows_dirty":
+                    print("Pillow on the floor was clicked")
+                    self.dirtyPillow.alpha = 0.0
+                    self.cleanPillows.alpha = 1.0
+                case "dirty_bed":
+                    print("Messy bed was clicked")
+                    self.dirtyBed.alpha = 0.0
+                    self.cleanBed.alpha = 1.0
+                case "dirty_rug":
+                    print("Flipped rug was clicked")
+                    self.dirtyRug.alpha = 0.0
+                    self.cleanRug.alpha = 1.0
+                case "dirty_lamp":
+                    print("Flipped lamp was clicked")
+                    self.dirtyLamp.alpha = 0.0
+                    self.cleanLamp.alpha = 1.0
+                case "dirty_towel":
+                    print("Towel on the floor was clicked")
+                    self.dirtyTowel.alpha = 0.0
+                case "dirty_trash_can":
+                    print("Full trash can was clicked")
+                    self.dirtyTrashCan.alpha = 0.0
+                case "Dirty Drink":
+                    print("Spilled drink on the floor was clicked")
+                    self.dirtyDrink.alpha = 0.0
+                case "dirty_stool":
+                    print("Misplaced stool was clicked")
+                    self.dirtyStool.alpha = 0.0
+                    self.cleanStool.alpha = 1.0
+                case "dirty_window":
+                    print("Dirty Window was clicked")
+                    self.dirtyWindow.alpha = 0.0
+                default:
+                    print("Error: Something was clicked but correct restoration identifier was not set!")
+            }
+            
+            
         } else {
             //Transparent part of image view was selected
         }
