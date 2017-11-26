@@ -31,6 +31,7 @@ class BedroomViewController: UIViewController {
     {
         let touchPoint = tapGestureRecognizer.location(in: background)
         model?.update(coordinates: touchPoint)
+        print("Click!")
     }
     
     /*
@@ -111,6 +112,5 @@ class BedroomViewController: UIViewController {
         
         return imageView
     }
-    
 }
 

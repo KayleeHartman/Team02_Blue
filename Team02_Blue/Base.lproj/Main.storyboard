@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Icp-xa-dbK">
     <device id="ipad10_5" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -73,6 +73,69 @@
             </objects>
             <point key="canvasLocation" x="734.89208633093529" y="121.58273381294966"/>
         </scene>
+        <!--Bedroom Scene 2-->
+        <scene sceneID="2RX-Sw-U41">
+            <objects>
+                <viewController title="Bedroom Scene 2" id="Icp-xa-dbK" customClass="Bedroom2" customModule="Team02_Blue" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tng-D8-dRt">
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bedroom_Background" translatesAutoresizingMaskIntoConstraints="NO" id="qy7-yl-OKJ">
+                                <rect key="frame" x="0.0" y="20" width="1112" height="814"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bed_clean" translatesAutoresizingMaskIntoConstraints="NO" id="ici-ac-vmq">
+                                <rect key="frame" x="65" y="391" width="538" height="349"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="dirty_bed" image="bed_unmade" translatesAutoresizingMaskIntoConstraints="NO" id="5SR-1D-BPQ" userLabel="dirty_bed">
+                                <rect key="frame" x="65" y="391" width="538" height="349"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bed_pillows_clean" translatesAutoresizingMaskIntoConstraints="NO" id="msJ-bl-F3v">
+                                <rect key="frame" x="93" y="412" width="218" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="bed_pillows_dirty" image="bed_pillows_dirty" translatesAutoresizingMaskIntoConstraints="NO" id="GjL-6A-n2Z">
+                                <rect key="frame" x="48" y="723" width="133" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="dirty_trash_can" image="trash_can_dirty" translatesAutoresizingMaskIntoConstraints="NO" id="JqZ-au-niK" userLabel="Trash Can Dirty">
+                                <rect key="frame" x="486" y="459" width="52" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lamp_clean" translatesAutoresizingMaskIntoConstraints="NO" id="WZh-pQ-BQH">
+                                <rect key="frame" x="331" y="393" width="94" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="dirty_lamp" image="lamp_dirty" translatesAutoresizingMaskIntoConstraints="NO" id="VVo-tb-SPg">
+                                <rect key="frame" x="331" y="393" width="94" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dac-rS-PUd" firstAttribute="trailing" secondItem="qy7-yl-OKJ" secondAttribute="trailing" id="V2y-rm-Owr"/>
+                            <constraint firstItem="dac-rS-PUd" firstAttribute="bottom" secondItem="qy7-yl-OKJ" secondAttribute="bottom" id="mas-Ek-Qdz"/>
+                            <constraint firstItem="qy7-yl-OKJ" firstAttribute="top" secondItem="dac-rS-PUd" secondAttribute="top" id="wmD-2H-bCl"/>
+                            <constraint firstItem="qy7-yl-OKJ" firstAttribute="leading" secondItem="dac-rS-PUd" secondAttribute="leading" id="zwP-02-f61"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dac-rS-PUd"/>
+                    </view>
+                    <connections>
+                        <outlet property="cleanBed" destination="5SR-1D-BPQ" id="Pmj-E0-Bnh"/>
+                        <outlet property="cleanLamp" destination="WZh-pQ-BQH" id="OqK-rm-apc"/>
+                        <outlet property="cleanPillows" destination="msJ-bl-F3v" id="CeE-0v-l1Y"/>
+                        <outlet property="dirtyBed" destination="5SR-1D-BPQ" id="wJI-cY-eXM"/>
+                        <outlet property="dirtyLamp" destination="VVo-tb-SPg" id="YN0-aw-pNM"/>
+                        <outlet property="dirtyPillow" destination="GjL-6A-n2Z" id="O5w-AR-ofN"/>
+                        <outlet property="dirtyTrashCan" destination="JqZ-au-niK" id="ixN-PM-HRc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MME-8Q-qPp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="654.49640287769785" y="957.55395683453241"/>
+        </scene>
         <!--Bathroom-->
         <scene sceneID="6Ss-SH-bPU">
             <objects>
@@ -97,13 +160,21 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V4a-EI-BRs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1544.7841726618706" y="-522.30215827338134"/>
+            <point key="canvasLocation" x="1803" y="-360"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Bedroom_Background" width="1920" height="1080"/>
         <image name="JordanPeterson" width="800" height="800"/>
+        <image name="bed_clean" width="927" height="462"/>
+        <image name="bed_pillows_clean" width="435" height="135"/>
+        <image name="bed_pillows_dirty" width="184" height="143"/>
+        <image name="bed_unmade" width="927" height="462"/>
+        <image name="lamp_clean" width="182" height="132"/>
+        <image name="lamp_dirty" width="182" height="132"/>
+        <image name="trash_can_dirty" width="88" height="101"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="9tz-EB-IX8"/>
+        <segue reference="7Do-5f-wkC"/>
     </inferredMetricsTieBreakers>
 </document>

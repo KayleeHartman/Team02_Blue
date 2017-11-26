@@ -62,6 +62,8 @@ class Model {
                 if let imageView = item.getDirtyView() {
                     let color = imageView.image?.getPixelColor(location: coordinates, size: imageView.frame.size)
                     
+                    print(color!)
+                    
                     //if the alpha of that pixel is nonzero, then the user tapped on the relevant
                     //part of the image (the part that isn't transparent)
                     if color?.colorComponents?.alpha != 0.0 {
