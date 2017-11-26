@@ -67,3 +67,6 @@ fastlane/screenshots
 fastlane/test_output
 .DS_Store
 Team02_Blue.xcodeproj/project.xcworkspace/xcuserdata/Evan.xcuserdatad/UserInterfaceState.xcuserstate
+*.xcuserstate
+.DS_Store
+.DS_Store
