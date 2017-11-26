@@ -112,6 +112,10 @@
                                 <rect key="frame" x="331" y="393" width="94" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="dirty_nightstand" image="nightstand_dirty" translatesAutoresizingMaskIntoConstraints="NO" id="fDK-d7-woW">
+                                <rect key="frame" x="0.0" y="548" width="68" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -128,6 +132,7 @@
                         <outlet property="cleanPillows" destination="msJ-bl-F3v" id="CeE-0v-l1Y"/>
                         <outlet property="dirtyBed" destination="5SR-1D-BPQ" id="wJI-cY-eXM"/>
                         <outlet property="dirtyLamp" destination="VVo-tb-SPg" id="YN0-aw-pNM"/>
+                        <outlet property="dirtyNightstand" destination="fDK-d7-woW" id="S5H-Ss-4WU"/>
                         <outlet property="dirtyPillow" destination="GjL-6A-n2Z" id="O5w-AR-ofN"/>
                         <outlet property="dirtyTrashCan" destination="JqZ-au-niK" id="ixN-PM-HRc"/>
                     </connections>
@@ -172,6 +177,7 @@
         <image name="bed_unmade" width="927" height="462"/>
         <image name="lamp_clean" width="182" height="132"/>
         <image name="lamp_dirty" width="182" height="132"/>
+        <image name="nightstand_dirty" width="117" height="108"/>
         <image name="trash_can_dirty" width="88" height="101"/>
     </resources>
     <inferredMetricsTieBreakers>
