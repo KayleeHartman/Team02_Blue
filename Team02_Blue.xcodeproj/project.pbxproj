@@ -20,6 +20,7 @@
 		23F69AB21FC0EBB700B30E5C /* BathroomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F69AB11FC0EBB700B30E5C /* BathroomViewController.swift */; };
 		23F69AB41FC0EFC200B30E5C /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F69AB31FC0EFC200B30E5C /* extensions.swift */; };
 		40F1EEF01FCA1FBA00FD129E /* Bedroom2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F1EEEF1FCA1FBA00FD129E /* Bedroom2.swift */; };
+		40F1EEF21FCA978B00FD129E /* Restroom2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F1EEF11FCA978B00FD129E /* Restroom2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		23F69AB11FC0EBB700B30E5C /* BathroomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BathroomViewController.swift; sourceTree = "<group>"; };
 		23F69AB31FC0EFC200B30E5C /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		40F1EEEF1FCA1FBA00FD129E /* Bedroom2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bedroom2.swift; sourceTree = "<group>"; };
+		40F1EEF11FCA978B00FD129E /* Restroom2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restroom2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				23F69AAD1FC0EAD300B30E5C /* Model.swift */,
 				23F69AAF1FC0EAEB00B30E5C /* CleanupItem.swift */,
 				200448A81FBFB7A40042374F /* Main.storyboard */,
+				40F1EEF11FCA978B00FD129E /* Restroom2.swift */,
 				40F1EEEF1FCA1FBA00FD129E /* Bedroom2.swift */,
 				23F69AB11FC0EBB700B30E5C /* BathroomViewController.swift */,
 				200448AB1FBFB7A40042374F /* Assets.xcassets */,
@@ -281,6 +284,7 @@
 				200448A51FBFB7A40042374F /* AppDelegate.swift in Sources */,
 				23F69AB01FC0EAEB00B30E5C /* CleanupItem.swift in Sources */,
 				40F1EEF01FCA1FBA00FD129E /* Bedroom2.swift in Sources */,
+				40F1EEF21FCA978B00FD129E /* Restroom2.swift in Sources */,
 				23F69AB41FC0EFC200B30E5C /* extensions.swift in Sources */,
 				23F69AAC1FC0EAAB00B30E5C /* BedroomViewController.swift in Sources */,
 				23F69AB21FC0EBB700B30E5C /* BathroomViewController.swift in Sources */,

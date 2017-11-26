@@ -10,6 +10,8 @@ import UIKit
 
 class Bedroom2: UIViewController {
     
+    @IBAction func unwindToBedroom(segue: UIStoryboardSegue) {}
+    
     //Connect All Outlets
     @IBOutlet weak var dirtyBed: UIImageView!
     @IBOutlet weak var cleanBed: UIImageView!
