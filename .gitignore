@@ -65,8 +65,8 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
-
 .DS_Store
+Team02_Blue.xcodeproj/project.xcworkspace/xcuserdata/Evan.xcuserdatad/UserInterfaceState.xcuserstate
 *.xcuserstate
-
-*.pbxproj
+.DS_Store
+.DS_Store
