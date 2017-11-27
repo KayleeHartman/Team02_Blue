@@ -2,7 +2,7 @@
 //  Bedroom2.swift
 //  Team02_Blue
 //
-//  Created by Gustavo E Soto on 11/25/17.
+//  Created by BlueTeam on 11/25/17.
 //  Copyright © 2017 BlueTeam. All rights reserved.
 //
 
@@ -11,6 +11,8 @@ import UIKit
 class Bedroom2: UIViewController {
     
     @IBAction func unwindToBedroom(segue: UIStoryboardSegue) {}
+    
+    var levelVal = 0
     
     //Connect All Outlets
     @IBOutlet weak var scoreLabel: UILabel!
@@ -30,6 +32,10 @@ class Bedroom2: UIViewController {
     @IBOutlet weak var dirtyStool: UIImageView!
     @IBOutlet weak var cleanStool: UIImageView!
     
+    // outlets for difficulty
+    @IBOutlet weak var viewItems: UIButton!
+    @IBOutlet weak var scoreBackground: UIImageView!
+    
     // Show clean room
     @IBOutlet weak var cleanRoom: UIImageView!
     let roomImage = UIImage(named: "Bedroom.png")
@@ -38,6 +44,15 @@ class Bedroom2: UIViewController {
     }
     @IBAction func cleanRoomUp(_ sender: UIButton) {
         cleanRoom.image = nil
+    }
+    
+    // Show menu
+    @IBAction func showMenu(_ sender: UIButton) {
+        let menuVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "menuID") as! MenuViewController
+        self.addChildViewController(menuVC)
+        menuVC.view.frame = self.view.frame
+        self.view.addSubview(menuVC.view)
+        menuVC.didMove(toParentViewController: self)
     }
     
     //Build object dictionary
@@ -54,6 +69,21 @@ class Bedroom2: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // switch statement for difficulty
+        switch (levelVal) {
+        case 2:
+            viewItems.isHidden = true
+        case 3:
+            viewItems.isHidden = true
+            scoreLabel.isHidden = true
+            scoreBackground.isHidden = true
+        default:
+            viewItems.isHidden = false
+            scoreLabel.isHidden = false
+            scoreBackground.isHidden = false
+        }
+        
         //Initialize object Dictionary
         initDict()
         getActiveObj()
@@ -396,6 +426,7 @@ class Bedroom2: UIViewController {
             let nextScene = segue.destination as? Restroom2
             nextScene?.objectDictRestroom = self.objectDict
             nextScene?.score = self.score
+            nextScene?.levelVal = self.levelVal
         } else if segue.identifier == "FinishBedroom" {
             //let nextScene = segue.destination as? FinishViewController
         }

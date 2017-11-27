@@ -14,6 +14,8 @@
 		200448AF1FBFB7A40042374F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 200448AD1FBFB7A40042374F /* LaunchScreen.storyboard */; };
 		200448BA1FBFB7A40042374F /* Team02_BlueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200448B91FBFB7A40042374F /* Team02_BlueTests.swift */; };
 		200448C51FBFB7A40042374F /* Team02_BlueUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200448C41FBFB7A40042374F /* Team02_BlueUITests.swift */; };
+		20D877D81FCC0FB40074A53F /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D877D71FCC0FB40074A53F /* MenuViewController.swift */; };
+		20D877DA1FCC17DA0074A53F /* LevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D877D91FCC17DA0074A53F /* LevelViewController.swift */; };
 		23F69AB41FC0EFC200B30E5C /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F69AB31FC0EFC200B30E5C /* extensions.swift */; };
 		40F1EEF01FCA1FBA00FD129E /* Bedroom2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F1EEEF1FCA1FBA00FD129E /* Bedroom2.swift */; };
 		40F1EEF21FCA978B00FD129E /* Restroom2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F1EEF11FCA978B00FD129E /* Restroom2.swift */; };
@@ -51,6 +53,8 @@
 		200448C01FBFB7A40042374F /* Team02_BlueUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Team02_BlueUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		200448C41FBFB7A40042374F /* Team02_BlueUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team02_BlueUITests.swift; sourceTree = "<group>"; };
 		200448C61FBFB7A40042374F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20D877D71FCC0FB40074A53F /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		20D877D91FCC17DA0074A53F /* LevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelViewController.swift; sourceTree = "<group>"; };
 		23F69AB31FC0EFC200B30E5C /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		40F1EEEF1FCA1FBA00FD129E /* Bedroom2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bedroom2.swift; sourceTree = "<group>"; };
 		40F1EEF11FCA978B00FD129E /* Restroom2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restroom2.swift; sourceTree = "<group>"; };
@@ -107,8 +111,10 @@
 			children = (
 				200448A41FBFB7A40042374F /* AppDelegate.swift */,
 				200448A61FBFB7A40042374F /* ViewController.swift */,
+				20D877D71FCC0FB40074A53F /* MenuViewController.swift */,
 				23F69AB31FC0EFC200B30E5C /* extensions.swift */,
 				200448A81FBFB7A40042374F /* Main.storyboard */,
+				20D877D91FCC17DA0074A53F /* LevelViewController.swift */,
 				40F1EEF31FCBEE7100FD129E /* FinishViewController.swift */,
 				40F1EEF11FCA978B00FD129E /* Restroom2.swift */,
 				40F1EEEF1FCA1FBA00FD129E /* Bedroom2.swift */,
@@ -274,6 +280,8 @@
 				200448A71FBFB7A40042374F /* ViewController.swift in Sources */,
 				200448A51FBFB7A40042374F /* AppDelegate.swift in Sources */,
 				40F1EEF01FCA1FBA00FD129E /* Bedroom2.swift in Sources */,
+				20D877DA1FCC17DA0074A53F /* LevelViewController.swift in Sources */,
+				20D877D81FCC0FB40074A53F /* MenuViewController.swift in Sources */,
 				40F1EEF21FCA978B00FD129E /* Restroom2.swift in Sources */,
 				23F69AB41FC0EFC200B30E5C /* extensions.swift in Sources */,
 				40F1EEF41FCBEE7100FD129E /* FinishViewController.swift in Sources */,

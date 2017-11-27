@@ -1,5 +1,5 @@
 //
-//  FinishViewController.swift
+//  MenuViewController.swift
 //  Team02_Blue
 //
 //  Created by BlueTeam on 11/27/17.
@@ -8,12 +8,16 @@
 
 import UIKit
 
-class FinishViewController: UIViewController {
+class MenuViewController: UIViewController {
 
+    @IBAction func closeMenu(_ sender: Any) {
+        self.view.removeFromSuperview()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.view.backgroundColor = UIColor.black.withAlphaComponent(0.75)
     }
 
     override func didReceiveMemoryWarning() {
