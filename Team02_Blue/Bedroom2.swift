@@ -260,6 +260,10 @@ class Bedroom2: UIViewController {
                     print("Error: Something was clicked but correct restoration identifier was not set!")
             }
             
+            //Segue if we hit 12 (clean all dirty items)
+            if self.score == 12 {
+                self.performSegue(withIdentifier: "FinishBedroom", sender: self)
+            }
             
         } else {
             //Transparent part of image view was selected
@@ -375,15 +379,15 @@ class Bedroom2: UIViewController {
         )
     }
     
-    
     // MARK: - Navigation
-
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue:UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "restroomSegue" {
             let nextScene = segue.destination as? Restroom2
             nextScene?.objectDictRestroom = self.objectDict
             nextScene?.score = self.score
+        } else if segue.identifier == "FinishBedroom" {
+            //let nextScene = segue.destination as? FinishViewController
         }
     }
     
