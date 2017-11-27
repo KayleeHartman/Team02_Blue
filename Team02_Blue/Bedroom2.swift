@@ -30,6 +30,16 @@ class Bedroom2: UIViewController {
     @IBOutlet weak var dirtyStool: UIImageView!
     @IBOutlet weak var cleanStool: UIImageView!
     
+    // Show clean room
+    @IBOutlet weak var cleanRoom: UIImageView!
+    let roomImage = UIImage(named: "Bedroom.png")
+    @IBAction func cleanRoomDown(_ sender: UIButton) {
+        cleanRoom.image = roomImage
+    }
+    @IBAction func cleanRoomUp(_ sender: UIButton) {
+        cleanRoom.image = nil
+    }
+    
     //Build object dictionary
     var objectDict: [String:(
         is_active:Bool,

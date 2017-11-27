@@ -16,6 +16,16 @@ class Restroom2: UIViewController {
         )] = [:]
     var score:Int = 0
     
+    // Show clean room
+    @IBOutlet weak var cleanRoom: UIImageView!
+    let roomImage = UIImage(named: "Bathroom.png")
+    @IBAction func cleanRoomDown(_ sender: UIButton) {
+        cleanRoom.image = roomImage
+    }
+    @IBAction func cleanRoomUp(_ sender: UIButton) {
+        cleanRoom.image = nil
+    }
+    
     //Connect all outlets
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var restroomDirtyTowel: UIImageView!
