@@ -175,6 +175,7 @@
                         <outlet property="dirtyTowel" destination="vz2-cZ-2eE" id="l18-H9-cfb"/>
                         <outlet property="dirtyTrashCan" destination="JqZ-au-niK" id="ixN-PM-HRc"/>
                         <outlet property="dirtyWindow" destination="1XI-Y9-CrT" id="2sD-Bq-9zs"/>
+                        <outlet property="scoreLabel" destination="joZ-kd-3ed" id="1pK-Tv-vcy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MME-8Q-qPp" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -275,6 +276,7 @@
                         <outlet property="restroomDirtyShower" destination="F9E-Ae-xdy" id="BJW-s3-dPX"/>
                         <outlet property="restroomDirtyTowel" destination="HHq-jl-12U" id="hH8-Gg-LGm"/>
                         <outlet property="restroomDirtyTrash" destination="c9N-DR-kTn" id="d5P-nY-OjO"/>
+                        <outlet property="scoreLabel" destination="CUG-LY-ORJ" id="WsV-tz-VUU"/>
                         <segue destination="OqZ-qx-wBx" kind="unwind" identifier="unwindToBedroom" animates="NO" unwindAction="unwindToBedroomWithSegue:" id="GnV-CZ-J3i"/>
                     </connections>
                 </viewController>

@@ -13,6 +13,7 @@ class Bedroom2: UIViewController {
     @IBAction func unwindToBedroom(segue: UIStoryboardSegue) {}
     
     //Connect All Outlets
+    @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var dirtyBed: UIImageView!
     @IBOutlet weak var cleanBed: UIImageView!
     @IBOutlet weak var dirtyPillow: UIImageView!
@@ -34,8 +35,12 @@ class Bedroom2: UIViewController {
         is_active:Bool,
         is_clean:Bool
     )] = [:]
-    
     var activeObjs = [String]()
+    var score:Int = 0
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.scoreLabel.text = "Items Cleaned: \(self.score) / 12"
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -154,13 +159,6 @@ class Bedroom2: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func prepare(for segue:UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "restroomSegue" {
-            let nextScene = segue.destination as? Restroom2
-            nextScene?.objectDictRestroom = self.objectDict
-        }
-    }
-    
     //Tapped Object Action
     @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer){
         
@@ -197,47 +195,67 @@ class Bedroom2: UIViewController {
                     print("Nightstand's open drawer was clicked")
                     self.dirtyNightstand.alpha = 0.0
                     self.objectDict[restorationIdentifier]?.is_clean = true
+                    self.score += 1
+                    self.scoreLabel.text = "Items Cleaned: \(self.score) / 12"
                 case "bedroom_dirty_pillows":
                     print("Pillow on the floor was clicked")
                     self.dirtyPillow.alpha = 0.0
                     self.cleanPillows.alpha = 1.0
                     self.objectDict[restorationIdentifier]?.is_clean = true
+                    self.score += 1
+                    self.scoreLabel.text = "Items Cleaned: \(self.score) / 12"
                 case "bedroom_dirty_bed":
                     print("Messy bed was clicked")
                     self.dirtyBed.alpha = 0.0
                     self.cleanBed.alpha = 1.0
                     self.objectDict[restorationIdentifier]?.is_clean = true
+                    self.score += 1
+                    self.scoreLabel.text = "Items Cleaned: \(self.score) / 12"
                 case "bedroom_dirty_rug":
                     print("Flipped rug was clicked")
                     self.dirtyRug.alpha = 0.0
                     self.cleanRug.alpha = 1.0
                     self.objectDict[restorationIdentifier]?.is_clean = true
+                    self.score += 1
+                    self.scoreLabel.text = "Items Cleaned: \(self.score) / 12"
                 case "bedroom_dirty_lamp":
                     print("Flipped lamp was clicked")
                     self.dirtyLamp.alpha = 0.0
                     self.cleanLamp.alpha = 1.0
                     self.objectDict[restorationIdentifier]?.is_clean = true
+                    self.score += 1
+                    self.scoreLabel.text = "Items Cleaned: \(self.score) / 12"
                 case "bedroom_dirty_towel":
                     print("Towel on the floor was clicked")
                     self.dirtyTowel.alpha = 0.0
                     self.objectDict[restorationIdentifier]?.is_clean = true
+                    self.score += 1
+                    self.scoreLabel.text = "Items Cleaned: \(self.score) / 12"
                 case "bedroom_dirty_trash":
                     print("Full trash can was clicked")
                     self.dirtyTrashCan.alpha = 0.0
                     self.objectDict[restorationIdentifier]?.is_clean = true
+                    self.score += 1
+                    self.scoreLabel.text = "Items Cleaned: \(self.score) / 12"
                 case "bedroom_dirty_drink":
                     print("Spilled drink on the floor was clicked")
                     self.dirtyDrink.alpha = 0.0
                     self.objectDict[restorationIdentifier]?.is_clean = true
+                    self.score += 1
+                    self.scoreLabel.text = "Items Cleaned: \(self.score) / 12"
                 case "bedroom_dirty_stool":
                     print("Misplaced stool was clicked")
                     self.dirtyStool.alpha = 0.0
                     self.cleanStool.alpha = 1.0
                     self.objectDict[restorationIdentifier]?.is_clean = true
+                    self.score += 1
+                    self.scoreLabel.text = "Items Cleaned: \(self.score) / 12"
                 case "bedroom_dirty_window":
                     print("Dirty Window was clicked")
                     self.dirtyWindow.alpha = 0.0
                     self.objectDict[restorationIdentifier]?.is_clean = true
+                    self.score += 1
+                    self.scoreLabel.text = "Items Cleaned: \(self.score) / 12"
                 default:
                     print("Error: Something was clicked but correct restoration identifier was not set!")
             }
@@ -357,14 +375,17 @@ class Bedroom2: UIViewController {
         )
     }
     
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func prepare(for segue:UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "restroomSegue" {
+            let nextScene = segue.destination as? Restroom2
+            nextScene?.objectDictRestroom = self.objectDict
+            nextScene?.score = self.score
+        }
     }
-    */
+    
 
 }

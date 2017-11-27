@@ -14,8 +14,10 @@ class Restroom2: UIViewController {
         is_active:Bool,
         is_clean:Bool
         )] = [:]
+    var score:Int = 0
     
     //Connect all outlets
+    @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var restroomDirtyTowel: UIImageView!
     @IBOutlet weak var restroomDirtyTrash: UIImageView!
     @IBOutlet weak var restroomDirtyRag: UIImageView!
@@ -25,8 +27,8 @@ class Restroom2: UIViewController {
     @IBOutlet weak var restroomCleanRug: UIImageView!
     @IBOutlet weak var restroomDirtyRug: UIImageView!
     
-    @IBAction func prevSegueArrowOrg(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "unwindToBedroom", sender: self)
+    override func viewDidAppear(_ animated: Bool) {
+        self.scoreLabel.text = "Items Cleaned: \(self.score) / 12"
     }
     
     override func viewDidLoad() {
@@ -111,11 +113,6 @@ class Restroom2: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func prepare(for segue:UIStoryboardSegue, sender: Any?) {
-        let nextScene = segue.destination as? Bedroom2
-        nextScene?.objectDict = self.objectDictRestroom
-    }
-    
     //Tapped Object Action
     @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer){
         
@@ -152,31 +149,45 @@ class Restroom2: UIViewController {
                     print("Towel on the floor was clicked")
                     self.restroomDirtyTowel.alpha = 0.0
                     self.objectDictRestroom[restorationIdentifier]?.is_clean = true
+                    self.score += 1
+                    self.scoreLabel.text = "Items Cleaned: \(self.score) / 12"
                 case "restroom_dirty_trash":
                     print("Full trash can was clicked")
                     self.restroomDirtyTrash.alpha = 0.0
                     self.objectDictRestroom[restorationIdentifier]?.is_clean = true
+                    self.score += 1
+                    self.scoreLabel.text = "Items Cleaned: \(self.score) / 12"
                 case "restroom_dirty_rag":
                     print("Dirty rag was clicked")
                     self.restroomDirtyRag.alpha = 0.0
                     self.objectDictRestroom[restorationIdentifier]?.is_clean = true
+                    self.score += 1
+                    self.scoreLabel.text = "Items Cleaned: \(self.score) / 12"
                 case "restroom_dirty_mirror":
                     print("Dirty mirror was clicked")
                     self.restroomDirtyMirror.alpha = 0.0
                     self.objectDictRestroom[restorationIdentifier]?.is_clean = true
+                    self.score += 1
+                    self.scoreLabel.text = "Items Cleaned: \(self.score) / 12"
                 case "restroom_dirty_shower":
                     print("Dirty shower was clicked")
                     self.restroomDirtyShower.alpha = 0.0
                     self.objectDictRestroom[restorationIdentifier]?.is_clean = true
+                    self.score += 1
+                    self.scoreLabel.text = "Items Cleaned: \(self.score) / 12"
                 case "restroom_dirty_floor":
                     print("Dirty restroom floor was clicked")
                     self.restroomDirtyFloor.alpha = 0.0
                     self.objectDictRestroom[restorationIdentifier]?.is_clean = true
+                    self.score += 1
+                    self.scoreLabel.text = "Items Cleaned: \(self.score) / 12"
                 case "restroom_dirty_rug":
                     print("Flipped rug was clicked")
                     self.restroomDirtyRug.alpha = 0.0
                     self.restroomCleanRug.alpha = 1.0
                     self.objectDictRestroom[restorationIdentifier]?.is_clean = true
+                    self.score += 1
+                    self.scoreLabel.text = "Items Cleaned: \(self.score) / 12"
                 default:
                     print("Error: Something was clicked but correct restoration identifier was not set!")
             }
@@ -187,14 +198,18 @@ class Restroom2: UIViewController {
         }
     }
     
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func prevSegueArrowOrg(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "unwindToBedroom", sender: self)
     }
-    */
+    override func prepare(for segue:UIStoryboardSegue, sender: Any?) {
+        let nextScene = segue.destination as? Bedroom2
+        nextScene?.objectDict = self.objectDictRestroom
+        nextScene?.score = self.score
+    }
+    
 
 }
