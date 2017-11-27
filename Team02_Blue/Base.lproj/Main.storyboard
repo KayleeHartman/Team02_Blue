@@ -10,6 +10,40 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--How To-->
+        <scene sceneID="WSp-Ni-fYi">
+            <objects>
+                <viewController storyboardIdentifier="howtoID" title="How To" id="kRm-TO-c30" customClass="HowToViewController" customModule="Team02_Blue" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2qI-bn-u0r">
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HowToPlay" translatesAutoresizingMaskIntoConstraints="NO" id="MYr-j8-eAL">
+                                <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GIr-Ui-aVf">
+                                <rect key="frame" x="-260" y="-221" width="175" height="158"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="close"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8jh-7O-XAn">
+                                <rect key="frame" x="20" y="20" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="close"/>
+                                <connections>
+                                    <action selector="closeHowTo:" destination="kRm-TO-c30" eventType="touchUpInside" id="IAI-1H-dKl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="Zel-ls-x6s"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w13-cq-YCs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="852.51798561151077" y="46.762589928057558"/>
+        </scene>
         <!--Level View Controller-->
         <scene sceneID="bHO-62-HUz">
             <objects>
@@ -93,6 +127,9 @@
                                 <rect key="frame" x="633" y="543" width="313" height="87"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="howto"/>
+                                <connections>
+                                    <action selector="showHowTo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ci4-x9-oO7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -415,6 +452,9 @@
                                         <rect key="frame" x="37" y="331" width="418" height="117"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="howto"/>
+                                        <connections>
+                                            <action selector="showHowTo:" destination="eGC-cC-RfL" eventType="touchUpInside" id="eA6-rY-WAi"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Occ-1d-6GD">
                                         <rect key="frame" x="37" y="481" width="418" height="117"/>
@@ -448,7 +488,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pJc-Ga-sU5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1195" y="47"/>
+            <point key="canvasLocation" x="1546" y="47"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Kwp-JU-4AC">
@@ -493,8 +533,10 @@
         <image name="DirtyTowel" width="247" height="196"/>
         <image name="FinishScreen" width="2224" height="1668"/>
         <image name="FullTrash" width="88" height="101"/>
+        <image name="HowToPlay" width="2224" height="1668"/>
         <image name="StartScreen" width="2224" height="1668"/>
         <image name="back" width="512" height="512"/>
+        <image name="close" width="512" height="512"/>
         <image name="easy" width="364" height="117"/>
         <image name="forward" width="512" height="512"/>
         <image name="hard" width="364" height="117"/>
@@ -510,6 +552,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="LG6-zv-DmX"/>
-        <segue reference="vzg-4i-3VQ"/>
+        <segue reference="uC5-2A-czS"/>
     </inferredMetricsTieBreakers>
 </document>

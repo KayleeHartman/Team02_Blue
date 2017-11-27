@@ -14,6 +14,15 @@ class MenuViewController: UIViewController {
         self.view.removeFromSuperview()
     }
     
+    // Show how to
+    @IBAction func showHowTo(_ sender: UIButton) {
+        let howtoVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "howtoID") as! HowToViewController
+        self.addChildViewController(howtoVC)
+        howtoVC.view.frame = self.view.frame
+        self.view.addSubview(howtoVC.view)
+        howtoVC.didMove(toParentViewController: self)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
