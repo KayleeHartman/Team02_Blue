@@ -2,13 +2,13 @@
 //  Bedroom2.swift
 //  Team02_Blue
 //
-//  Created by BlueTeam on 11/25/17.
+//  Created by Gustavo E Soto on 11/25/17.
 //  Copyright © 2017 BlueTeam. All rights reserved.
 //
 
 import UIKit
 
-class Bedroom: UIViewController {
+class Bedroom2: UIViewController {
     
     @IBAction func unwindToBedroom(segue: UIStoryboardSegue) {}
     
